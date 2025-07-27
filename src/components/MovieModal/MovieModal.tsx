@@ -8,7 +8,7 @@ interface MovieModalProps {
     onClose: () => void;
 }
 
-export default function Modal({ movie, onClose }: MovieModalProps) {
+export default function MovieModal({ movie, onClose }: MovieModalProps) {
     const handleBackdropClick = (event: React.MouseEvent<HTMLDivElement>) => {
         if (event.target === event.currentTarget) {
             onClose();
